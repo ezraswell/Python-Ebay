@@ -1,4 +1,4 @@
-key = 'EzraSwel-SwellSne-PRD-ced5cedf3-2214bf5d'
+key = 'APP ID'
 import json
 import requests
 from email.mime.multipart import MIMEMultipart
@@ -9,9 +9,9 @@ searches = []
 
 def sendemail(url, title, condition, price):
     msg= MIMEMultipart()
-    password = "swellsneakers1!"
-    msg["From"]= "swellsneakers@gmail.com"
-    msg["To"]= "swellsneakers@gmail.com"
+    password = "ENTER PASSOWRD"
+    msg["From"]= "ENTER FROM EMAIL"
+    msg["To"]= "ENTER TO EMAIL"
     msg ["Subject"]= "Item Found"
     body = "<a href=\""+ url +"\">" + title + "</a><br><p>Condition: " + condition +"</p><p>Price:" +price +"</p>"
     msg.attach(MIMEText(body, "html"))
